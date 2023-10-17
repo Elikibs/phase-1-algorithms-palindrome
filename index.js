@@ -1,9 +1,18 @@
 function isPalindrome(word) {
-  // Write your algorithm here
+  const wordLength = word.length;
+  for (i=0; i < (wordLength/2); i++){
+    if(word[i] !== word[wordLength-1-i]){
+      return false;
+    }
+  }
+  return true;
 }
 
 /* 
   Add your pseudocode here
+  Get word length
+  Use for loop to initialize the "array like character set of words"
+  Check if a letter at a particular index is same with a letter from "same" index backwards
 */
 
 /*
